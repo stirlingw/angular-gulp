@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     browserify = require('gulp-browserify'),
     concat = require('gulp-concat'),
-    clean = require('gulp-clean'),
+    rimraf = require('gulp-rimraf'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer');
 
