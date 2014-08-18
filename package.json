@@ -22,6 +22,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/stirlingw/angular-gulp-browserify-livereload-boilerplate.git"
+    "url": "git://github.com/stirlingw/angular-gulp.git"
   }
 }

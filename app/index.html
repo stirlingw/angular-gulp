@@ -1,16 +1,157 @@
 <!doctype html>
 <html lang="en" ng-app="myApp">
 <head>
-  <title>My awesome app</title>
-  <link rel="stylesheet" href="css/main.css" />
+    <title>My awesome app</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+        .vertical-text.left {
+            margin-top: 95rem;
+        }
+
+        .vertical-text.right {
+            margin-top: 63rem;
+        }
+        .navbar-default {
+            background-color: #2a2a2a;
+            border-color: transparent;
+        }
+        .navbar {
+             padding: 3.05em 0 0 0;
+         }
+        .navbar-nav>li>a {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .navbar {
+            border-radius: 0;
+        }
+        .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom: 0;
+            border: 0;
+        }
+        .navbar-default .navbar-nav > li > a {
+            color: #ffffff;
+        }
+        .navbar li > a {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 1rem;
+        }
+        .navbar-logo {
+            height: 100%;
+        }
+        .navbar-logo {
+            height: 70%;
+            padding-top: 0.2em;
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" ></script>
+    <script src="/js/bundle.js"></script>
+
 </head>
+
 <body ng-controller='WelcomeCtrl'>
 
-  <h1>My awesome app</h1>
+<script type="text/javascript">
+    WebFont.load({
+        monotype: {
+            projectId: '32ff2a5c-f2e1-4a24-953c-7b54c509145b',
+            version: 2
+        },
+        timeout:3000
+    });
+</script>
+<script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
 
-  <p>{{testVar}}</p>
+<div class="site-wrapper">
 
-  <script src="/js/bundle.js"></script>
+<header class="site-header">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#p53-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img nopin = "nopin" src="/images/logo.svg" alt="Stirling Waite Logo" class="navbar-logo" data-no-retina ><h1 class="sr-only">Stirling Waite</h1></a>
+            </div>
+            <div class="collapse navbar-collapse" id="p53-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden-xs"><a href="/">Home</a></li>
+                    <li><a href="/about">About me</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/blog">Journal</a></li>
+                    <li><a href="/contact">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<div class="container v hidden-xs">
+    <div class="vertical-text left">
+        <p>&mdash; +44 (0) 1138343765</p>
+    </div>
+
+    <div class="vertical-text right">
+        <p>&mdash; 53.7997&deg; N, 1.5492&deg; W</p>
+    </div>
+</div>
+
+
+<div ng-view></div>
+
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 company-info">
+                <p>Stirling Waite<br>
+                    Company No: 801-555-555<br>
+                    &mdash;<br>
+                    All Rights Reserved.<br>
+                    &copy; 2010 - 2014 stirlingwaite.com<br>
+                    <a href="/termsandconditions">Terms and Conditions</a><br>
+                    <a href="/privacy">Privacy Policy</a>
+                </p>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 col-lg-2 col-sm-offset-2 col-lg-offset-4 company-contact">
+                <p>
+                    twitter: @stirlingwaite<br>
+                    facebook: facebook.com/stirlingwaite<br>
+                    email: <a href="mailto:stirlingw@gmail.com">stirlingw@gmail.com</a><br>
+                </p>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-3 col-lg-2 company-location">
+                <address>Stirling Waite,<br>
+                    Midvale, Utah 84047</address>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="/js/responsive-img.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="/js/jquery.history.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="/js/gmap3.min.js"></script>
+<script src="/js/angular-route.min.js"></script>
+
 
 </body>
 </html>
